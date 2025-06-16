@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "babel": "^5.8.38",
+    "parcel": "^2.15.2",
+    "tailwindcss": "^4.1.10"
+  },
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/style-input.css -o ./public/styles.css --watch",
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "name": "tiler",
+  "version": "1.0.0",
+  "description": "\"A tiling company website\"",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Macnelson9/tiler.git"
+  },
+  "author": "Uche Macnelson Ofatu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Macnelson9/tiler/issues"
+  },
+  "homepage": "https://github.com/Macnelson9/tiler#readme"
+}
