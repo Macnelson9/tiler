@@ -13,22 +13,29 @@
   </head>
   <body class="bg-gray-950">
     <div class="flex flex-col text-white" id="body-container">
-      <header class="p-4 border-b-2 border-white">
+      <header class="p-4 border-b-2 border-white lg:px-8 xl:px-12">
         <nav class="flex items-center justify-between w-full" id="main-nav">
-          <h1 class="font-bold">CERAMIC</h1>
-          <ul class="hidden">
+          <h1 class="font-bold md:hidden">CERAMIC</h1>
+          <ul
+            class="hidden md:flex items-center gap-4 uppercase text-[10px] lg:text-[12px]"
+          >
             <li>Home</li>
             <li>Catalog</li>
             <li>Services</li>
             <li>About</li>
           </ul>
-          <button class="hidden" type="button">Shop Now</button>
-          <i class="fa-solid fa-bars"></i>
+          <button
+            class="hidden md:block uppercase bg-white p-2 px-3 text-black font-bold rounded-[10px]"
+            type="button"
+          >
+            Shop Now
+          </button>
+          <span class="md:hidden"><i class="fa-solid fa-bars"></i></span>
         </nav>
       </header>
 
       <nav
-        class="p-4 flex-col items-start gap-12.5 inset-0 overflow-x-hidden fixed z-100 bg-[hsla(0,0,97%,1)] backdrop-blur-md hidden"
+        class="p-4 flex-col items-start gap-12.5 inset-0 overflow-x-hidden opacity-0 invisible fixed z-100 bg-[hsla(0,0,97%,1)] backdrop-blur-md hidden md:hidden"
         id="mobile-navigation"
       >
         <div class="flex items-center justify-between w-full" id="mobile-top">
@@ -44,7 +51,7 @@
             <li>About</li>
           </ul>
           <button
-            class="ml-3 bg-amber-50 p-2 px-3 text-black rounded-[10px]"
+            class="ml-3 bg-white p-2 px-3 text-black rounded-[10px]"
             type="button"
           >
             Shop Now
@@ -55,32 +62,51 @@
       <div class="border-b-2 border-white" id="hero">
         <div id="hero-container">
           <div
-            class="p-4 border-b-2 border-white flex w-full items-center justify-between"
+            class="p-4 border-b-2 border-white flex w-full items-center justify-between lg:px-8 xl:px-12"
             id="hero-top"
           >
-            <h1 class="font-extrabold text-3xl">CERAMIC TILE</h1>
+            <h1
+              class="font-extrabold text-3xl md:text-5xl lg:text-5xl xl:text-7xl"
+            >
+              CERAMIC TILE
+            </h1>
+
             <i class="fa-solid fa-arrow-right"></i>
           </div>
 
-          <div class="pl-4 pr-4 pb-4" id="hero-middle">
-            <p class="p-2 border-l-2 border-r-2 border-white text-sm">
+          <div
+            class="pl-4 pr-4 pb-4 md:grid grid-cols-4 lg:px-8 lg:pb-8 xl:px-12"
+            id="hero-middle"
+          >
+            <p
+              class="p-2 border-l-2 border-r-2 border-white text-sm md:text-[10px] lg:text-[12px]"
+            >
               One of the most versatile materials offer endless possibilities.
             </p>
-            <p class="p-2 border-l-2 border-r-2 border-white text-sm">
+            <p
+              class="p-2 border-l-2 border-r-2 border-white text-sm md:text-[10px] lg:text-[12px]"
+            >
               Design an exquisite accent wall with pattern.
             </p>
-            <p class="p-2 border-l-2 border-r-2 border-white text-sm">
+            <p
+              class="p-2 border-l-2 border-r-2 border-white text-sm md:text-[10px] lg:text-[12px]"
+            >
               Create a rustic feeling
             </p>
-            <p class="p-2 border-l-2 border-r-2 border-white text-sm">
+            <p
+              class="p-2 border-l-2 border-r-2 border-white text-sm md:text-[10px] lg:text-[12px]"
+            >
               A range of shapes, colors, finishes and styles that satisfy any
               taste.
             </p>
           </div>
 
-          <div class="p-4" id="hero-middle-2">
+          <div
+            class="p-4 md:grid md:grid-cols-4 lg:px-8 xl:px-12"
+            id="hero-middle-2"
+          >
             <img
-              class="rounded-t-2xl w-[100%] h-[200px] object-cover"
+              class="rounded-tl-4xl rounded-tr-4xl w-[100%] h-[200px] object-cover md:rounded-bl-lg md:rounded-tr-none"
               src="./assets/Tile 1.avif"
               alt="Tile Image"
             />
@@ -95,40 +121,53 @@
               alt="Tile Image"
             />
             <img
-              class="w-[100%] h-[200px] object-cover"
+              class="w-[100%] h-[200px] object-cover md:rounded-tr-4xl md:rounded-br-lg"
               src="./assets/Tile 4.webp"
               alt="Tile Image"
             />
           </div>
         </div>
 
-        <div class="flex flex-col p-4 gap-2" id="hero-bottom">
+        <div
+          class="flex flex-col p-4 pb-6 gap-2 md:flex-row md:items-center md:justify-between md:gap-0 lg:px-8 xl:px-12"
+          id="hero-bottom"
+        >
           <div id="col-1">
-            <h2 class="text-2xl font-extrabold">15+</h2>
-            <p class="text-xs">Years on the building materials market</p>
+            <h2 class="text-2xl font-extrabold md:text-3xl">15+</h2>
+            <p class="text-xs md:text-[10px] lg:text-[12px]">
+              Years on the building materials market
+            </p>
           </div>
           <div id="col-2">
-            <h2 class="text-2xl font-extrabold">70K+</h2>
-            <p class="text-xs">Satisfied customers</p>
+            <h2 class="text-2xl font-extrabold md:text-3xl">70K+</h2>
+            <p class="text-xs md:text-[10px] lg:text-[12px]">
+              Satisfied customers
+            </p>
           </div>
           <div id="col-3">
-            <h2 class="text-2xl font-extrabold">100+</h2>
-            <p class="text-xs">Brands cooperations</p>
+            <h2 class="text-2xl font-extrabold md:text-3xl">100+</h2>
+            <p class="text-xs md:text-[10px] lg:text-[12px]">
+              Brands cooperations
+            </p>
           </div>
           <div id="col-4">
-            <h2 class="text-2xl font-extrabold">20+</h2>
-            <p class="text-xs">Awards at exhibitions</p>
+            <h2 class="text-2xl font-extrabold md:text-3xl">20+</h2>
+            <p class="text-xs md:text-[10px] lg:text-[12px]">
+              Awards at exhibitions
+            </p>
           </div>
         </div>
       </div>
 
-      <main class="p-4" id="catalogue">
-        <h1 class="font-extrabold text-2xl text-center pt-10 pb-7">
+      <main class="p-4 lg:my-30" id="catalogue">
+        <h1
+          class="font-extrabold text-2xl text-center pt-10 pb-7 md:text-4xl md:mb-6"
+        >
           CATEGORIES
         </h1>
 
         <div
-          class="flex flex-col gap-2 border-l-2 border-r-2 border-white"
+          class="flex flex-col gap-2 border-l-2 border-r-2 border-white md:w-[50%] md:my-0 md:mx-auto lg:w-[40%] lg:mx-auto lg:mb-10 xl:w-[30%] xl:mx-auto"
           id="unique-design"
         >
           <div class="flex items-center justify-center gap-4" id="row-1">
@@ -211,10 +250,13 @@
           </div>
         </div>
 
-        <div class="pt-12" id="select-categories">
+        <div
+          class="pt-12 md:grid md:grid-cols-4 lg:px-8"
+          id="select-categories"
+        >
           <div id="category">
             <img
-              class="rounded-t-2xl w-[100%] h-[200px] object-cover"
+              class="rounded-t-4xl w-[100%] h-[200px] object-cover md:rounded-tr-none md:rounded-bl-lg"
               src="./assets/Tile 1.avif"
               alt="Tile Image"
             />
@@ -227,17 +269,17 @@
             />
           </div>
           <div
-            class="h-[200px] w-[100%] flex flex-col justify-end"
+            class="h-[200px] w-[100%] flex flex-col justify-end md:pl-2"
             id="category3"
           >
             <a class="underline underline-offset-2" href="#"
               >SEE ALL CATEGORIES
-              <span class="ml-2"><i class="fa-solid fa-arrow-right"></i></span
+              <span class="ml-1"><i class="fa-solid fa-arrow-right"></i></span
             ></a>
           </div>
           <div id="category4">
             <img
-              class="w-[100%] h-[200px] object-cover"
+              class="w-[100%] h-[200px] object-cover md:rounded-tr-4xl md:rounded-br-lg"
               src="./assets/Tile 3.jpg"
               alt="Tile Image"
             />
@@ -245,83 +287,100 @@
         </div>
       </main>
 
-      <div id="services">
-        <h1 class="font-extrabold text-2xl text-center pt-10 pb-7">
+      <div class="md:my-8" id="services">
+        <h1
+          class="font-extrabold text-2xl text-center pt-10 pb-7 md:text-4xl md:mb-6"
+        >
           OUR SERVICES
         </h1>
 
         <div class="border-t-2 border-b-2 border-white" id="services-container">
-          <div id="services-content">
+          <div
+            class="md:flex md:items-center md:justify-between md:border-b-2 border-white"
+            id="services-content"
+          >
             <div
-              class="flex flex-col gap-3 p-4 border-b-2 border-white"
+              class="flex flex-col gap-3 p-4 border-b-2 border-white md:border-none md:w-[35%] lg:px-10 xl:px-12"
               id="left-content"
             >
-              <h2 class="text-xs">DURATION: 2 WEEKS</h2>
-              <p class="text-xs">WADADMIN</p>
+              <h2 class="text-xs md:text-[10px]">DURATION: 2 WEEKS</h2>
+              <p class="text-xs md:text-[8px]">WADADMIN</p>
             </div>
 
             <div
-              class="flex flex-col p-4 border-b-2 border-white"
+              class="flex flex-col p-4 border-b-2 border-white md:border-none lg:px-10 xl:px-12"
               id="right-content"
             >
               <h2 class="text-lg">DESIGN SERVICES</h2>
-              <p class="text-xs">
+              <p class="text-xs md:text-[10px]">
                 Our professional design experts can help you with your project
                 for free.
               </p>
             </div>
 
-            <div class="p-4" id="action-arrow">
+            <div
+              class="p-4 border-b-2 border-white md:border-none lg:px-10 xl:px-12"
+              id="action-arrow"
+            >
               <i class="fa-solid fa-chevron-right"></i>
             </div>
           </div>
 
-          <div id="services-content2">
+          <div
+            class="md:flex md:items-center md:justify-between md:border-b-2 border-white"
+            id="services-content2"
+          >
             <div
-              class="flex flex-col gap-3 p-4 border-b-2 border-t-2 border-white"
+              class="flex flex-col gap-3 p-4 border-b-2 border-white md:border-none md:w-[35%] lg:px-10 xl:px-12"
               id="left-content2"
             >
-              <h2 class="text-xs">DURATION: 1 YEAR</h2>
-              <p class="text-xs">WADADMIN</p>
+              <h2 class="text-xs md:text-[10px]">DURATION: 1 YEAR</h2>
+              <p class="text-xs md:text-[8px]">WADADMIN</p>
             </div>
 
             <div
-              class="flex flex-col p-4 border-b-2 border-white"
+              class="flex flex-col p-4 border-b-2 border-white md:border-none lg:px-10 xl:px-12"
               id="right-content2"
             >
               <h2 class="text-lg">CREDIT SERVICES</h2>
-              <p class="text-xs">
+              <p class="text-xs md:text-[10px]">
                 No matter how big or small, we have a financing plan that's
                 right for you.
               </p>
             </div>
 
-            <div class="p-4" id="action-arrow">
+            <div
+              class="p-4 border-b-2 border-white md:border-none lg:px-10 xl:px-12"
+              id="action-arrow"
+            >
               <i class="fa-solid fa-chevron-right"></i>
             </div>
           </div>
 
-          <div id="services-content3">
+          <div
+            class="md:flex md:items-center md:justify-between"
+            id="services-content3"
+          >
             <div
-              class="flex flex-col gap-3 p-4 border-b-2 border-t-2 border-white"
+              class="flex flex-col gap-3 p-4 border-b-2 border-white md:border-none md:w-[35%] lg:px-10 xl:px-12"
               id="left-content3"
             >
-              <h2 class="text-xs">DURATION: 4 WEEKS</h2>
-              <p class="text-xs">WADADMIN</p>
+              <h2 class="text-xs md:text-[10px]">DURATION: 4 WEEKS</h2>
+              <p class="text-xs md:text-[8px]">WADADMIN</p>
             </div>
 
             <div
-              class="flex flex-col p-4 border-b-2 border-white"
+              class="flex flex-col p-4 border-b-2 border-white md:border-none lg:px-10 xl:px-12"
               id="right-content3"
             >
               <h2 class="text-lg">PRO SERVICES</h2>
-              <p class="text-xs">
+              <p class="text-xs md:text-[10px]">
                 Our dedicated PRO services team is here to help save you time
                 and money.
               </p>
             </div>
 
-            <div class="p-4" id="action-arrow">
+            <div class="p-4 lg:px-10 xl:px-12" id="action-arrow">
               <i class="fa-solid fa-chevron-right"></i>
             </div>
           </div>
@@ -329,26 +388,36 @@
       </div>
 
       <div id="about">
-        <div id="about-container">
+        <h1
+          class="font-extrabold text-2xl text-center pt-10 pb-7 md:text-4xl md:mb-6"
+        >
+          ABOUT US
+        </h1>
+        <div
+          class="md:grid md:grid-cols-2 border-t-2 border-b-2 border-white md:mb-6 lg:px-8"
+          id="about-container"
+        >
           <div class="p-4" id="about-left">
-            <h1 class="font-extrabold text-2xl text-center pt-10 pb-7">
-              ABOUT US
-            </h1>
-            <p class="text-xs border-l-2 border-r-2 border-white p-2">
-              We are a company with over 15 years of experience in the building
-              materials market. Our mission is to provide high-quality products
-              and services to our customers.
+            <p
+              class="text-xs border-l-2 border-r-2 border-white p-2 md:border-none"
+            >
+              We are a company with over
+              <strong>15 years of experience</strong> in the building materials
+              market. Our mission is to provide high-quality products and
+              services to our customers.
             </p>
-            <p class="text-xs border-l-2 border-r-2 border-white p-2">
-              We offer a wide range of tiles, including ceramic, porcelain,
-              glass, and natural stone, as well as design and installation
-              services.
+            <p
+              class="text-xs border-l-2 border-r-2 border-white p-2 md:border-none"
+            >
+              We offer a wide range of tiles, including
+              <strong> ceramic, porcelain, glass, and natural stone, </strong>
+              as well as design and installation services.
             </p>
           </div>
 
           <div class="p-4" id="about-right">
             <img
-              class="rounded-t-2xl w-[100%] h-[200px] object-cover"
+              class="rounded-t-4xl rounded-b-lg w-[100%] h-[200px] object-cover"
               src="./assets/Tile 4.webp"
               alt="Tile Image"
             />
@@ -356,30 +425,43 @@
         </div>
       </div>
 
-      <div id="contact">
-        <div id="contact-container">
+      <div class="mb-6" id="contact">
+        <h1
+          class="font-extrabold text-2xl text-center pt-10 pb-7 md:text-4xl md:mb-6"
+        >
+          CONTACT US
+        </h1>
+        <div
+          class="md:grid md:grid-cols-2 border-t-2 border-white lg:px-8"
+          id="contact-container"
+        >
           <div class="p-4" id="contact-left">
-            <h1 class="font-extrabold text-2xl text-center pt-10 pb-7">
-              CONTACT US
-            </h1>
-            <p class="text-xs border-l-2 border-r-2 border-white p-2">
+            <p
+              class="text-xs border-l-2 border-r-2 border-white p-2 md:border-none"
+            >
               If you have any questions or need assistance, please feel free to
               contact us.
             </p>
-            <p class="text-xs border-l-2 border-r-2 border-white p-2">
+            <p
+              class="text-xs border-l-2 border-r-2 border-white p-2 md:border-none"
+            >
               <strong>Address:</strong> 123 Hilldrive Estate, NewsBury, NJ, USA.
             </p>
-            <p class="text-xs border-l-2 border-r-2 border-white p-2">
+            <p
+              class="text-xs border-l-2 border-r-2 border-white p-2 md:border-none"
+            >
               <strong>Email:</strong> ceramictile@gmail.com
             </p>
-            <p class="text-xs border-l-2 border-r-2 border-white p-2">
+            <p
+              class="text-xs border-l-2 border-r-2 border-white p-2 md:border-none"
+            >
               <strong>Phone:</strong> +1 (123) 456-7890
             </p>
           </div>
 
           <div class="p-4" id="contact-right">
             <img
-              class="rounded-t-2xl w-[100%] h-[200px] object-cover"
+              class="rounded-t-4xl rounded-b-lg w-[100%] h-[200px] object-cover"
               src="./assets/Tile 1.avif"
               alt="Tile Image"
             />
@@ -388,9 +470,11 @@
       </div>
 
       <footer
-        class="p-4 border-t-2 border-b-2 border-white text-xs text-center"
+        class="px-4 py-6 border-t-2 border-b-2 border-white text-xs text-center"
       >
-        <p>Copyright &COPY; Ceramic, 2025. All Rights Reserved.</p>
+        <p class="font-bold">
+          Copyright &COPY; Ceramic, 2025. All Rights Reserved.
+        </p>
       </footer>
     </div>
   </body>
