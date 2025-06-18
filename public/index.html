@@ -5,27 +5,393 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiler | Home of Tiles</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e8c22a66c1.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="./script.js"></script>
   </head>
-  <body>
-    <div class="body-container">
-      <header>
-        <nav>
-          <!-- <img src="" alt="logo" class="logo" /> -->
-          <ul>
+  <body class="bg-gray-950">
+    <div class="flex flex-col text-white" id="body-container">
+      <header class="p-4 border-b-2 border-white">
+        <nav class="flex items-center justify-between w-full" id="main-nav">
+          <h1 class="font-bold">CERAMIC</h1>
+          <ul class="hidden">
             <li>Home</li>
-            <li>Products</li>
+            <li>Catalog</li>
+            <li>Services</li>
             <li>About</li>
-            <li>Contact Us</li>
           </ul>
-          <button type="button">Buy Now</button>
+          <button class="hidden" type="button">Shop Now</button>
+          <i class="fa-solid fa-bars"></i>
         </nav>
-
-        <div id="hero">
-          <h1>Welcome to the World's #1 Tiling Company</h1>
-          <p>Excellence at it's peak!</p>
-        </div>
       </header>
+
+      <nav
+        class="p-4 flex-col items-start gap-12.5 inset-0 overflow-x-hidden fixed z-100 bg-[hsla(0,0,97%,1)] backdrop-blur-md hidden"
+        id="mobile-navigation"
+      >
+        <div class="flex items-center justify-between w-full" id="mobile-top">
+          <h1 class="font-bold">CERAMIC</h1>
+          <i class="fa-solid fa-close"></i>
+        </div>
+
+        <div class="flex flex-col items-center gap-4" id="mobile-body">
+          <ul class="flex flex-col items-start gap-4">
+            <li>Home</li>
+            <li>Catalog</li>
+            <li>Services</li>
+            <li>About</li>
+          </ul>
+          <button
+            class="ml-3 bg-amber-50 p-2 px-3 text-black rounded-[10px]"
+            type="button"
+          >
+            Shop Now
+          </button>
+        </div>
+      </nav>
+
+      <div class="border-b-2 border-white" id="hero">
+        <div id="hero-container">
+          <div
+            class="p-4 border-b-2 border-white flex w-full items-center justify-between"
+            id="hero-top"
+          >
+            <h1 class="font-extrabold text-3xl">CERAMIC TILE</h1>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+
+          <div class="pl-4 pr-4 pb-4" id="hero-middle">
+            <p class="p-2 border-l-2 border-r-2 border-white text-sm">
+              One of the most versatile materials offer endless possibilities.
+            </p>
+            <p class="p-2 border-l-2 border-r-2 border-white text-sm">
+              Design an exquisite accent wall with pattern.
+            </p>
+            <p class="p-2 border-l-2 border-r-2 border-white text-sm">
+              Create a rustic feeling
+            </p>
+            <p class="p-2 border-l-2 border-r-2 border-white text-sm">
+              A range of shapes, colors, finishes and styles that satisfy any
+              taste.
+            </p>
+          </div>
+
+          <div class="p-4" id="hero-middle-2">
+            <img
+              class="rounded-t-2xl w-[100%] h-[200px] object-cover"
+              src="./assets/Tile 1.avif"
+              alt="Tile Image"
+            />
+            <img
+              class="w-[100%] h-[200px] object-cover"
+              src="./assets/Tile 2.jpg"
+              alt="Tile Image"
+            />
+            <img
+              class="w-[100%] h-[200px] object-cover"
+              src="./assets/Tile 3.jpg"
+              alt="Tile Image"
+            />
+            <img
+              class="w-[100%] h-[200px] object-cover"
+              src="./assets/Tile 4.webp"
+              alt="Tile Image"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col p-4 gap-2" id="hero-bottom">
+          <div id="col-1">
+            <h2 class="text-2xl font-extrabold">15+</h2>
+            <p class="text-xs">Years on the building materials market</p>
+          </div>
+          <div id="col-2">
+            <h2 class="text-2xl font-extrabold">70K+</h2>
+            <p class="text-xs">Satisfied customers</p>
+          </div>
+          <div id="col-3">
+            <h2 class="text-2xl font-extrabold">100+</h2>
+            <p class="text-xs">Brands cooperations</p>
+          </div>
+          <div id="col-4">
+            <h2 class="text-2xl font-extrabold">20+</h2>
+            <p class="text-xs">Awards at exhibitions</p>
+          </div>
+        </div>
+      </div>
+
+      <main class="p-4" id="catalogue">
+        <h1 class="font-extrabold text-2xl text-center pt-10 pb-7">
+          CATEGORIES
+        </h1>
+
+        <div
+          class="flex flex-col gap-2 border-l-2 border-r-2 border-white"
+          id="unique-design"
+        >
+          <div class="flex items-center justify-center gap-4" id="row-1">
+            <p class="text-[6px]">YARD</p>
+            <p class="text-[8px]">LEDGER</p>
+            <p class="text-[10px]">CLEARANCE</p>
+
+            <span
+              ><img
+                src="./assets/Boom.png"
+                alt="Boom"
+                class="w-[20px] h-[20px] invert-50"
+            /></span>
+
+            <p class="font-medium text-[12px]" id="large">MOSAIC</p>
+
+            <span
+              ><img
+                src="./assets/Boom.png"
+                alt="Boom"
+                class="w-[20px] h-[20px] invert-50"
+            /></span>
+          </div>
+
+          <div class="flex items-center justify-center gap-2" id="row-2">
+            <span
+              ><img
+                src="./assets/Boom.png"
+                alt="Boom"
+                class="w-[20px] h-[20px] invert-50"
+            /></span>
+
+            <p class="font-medium text-[12px]">SUBWAY</p>
+            <span
+              ><img
+                src="./assets/Boom.png"
+                alt="Boom"
+                class="w-[20px] h-[20px] invert-50"
+            /></span>
+
+            <p class="font-medium text-[12px]">NEW ARRIVALS</p>
+
+            <span
+              ><img
+                src="./assets/Boom.png"
+                alt="Boom"
+                class="w-[20px] h-[20px] invert-50"
+            /></span>
+
+            <p class="font-medium text-[12px]">MARBLE</p>
+
+            <span
+              ><img
+                src="./assets/Boom.png"
+                alt="Boom"
+                class="w-[20px] h-[20px] invert-50"
+            /></span>
+          </div>
+
+          <div class="flex items-center justify-center gap-2" id="row-3">
+            <span
+              ><img
+                src="./assets/Boom.png"
+                alt="Boom"
+                class="w-[20px] h-[20px] invert-50"
+            /></span>
+
+            <p class="font-medium text-[12px]">WOOD-LOOK</p>
+
+            <span
+              ><img
+                src="./assets/Boom.png"
+                alt="Boom"
+                class="w-[20px] h-[20px] invert-50"
+            /></span>
+
+            <p class="text-[10px]">STONE-LOOK</p>
+            <p class="text-[8px]">CAPULETI</p>
+            <p class="text-[6px]">LINHO</p>
+          </div>
+        </div>
+
+        <div class="pt-12" id="select-categories">
+          <div id="category">
+            <img
+              class="rounded-t-2xl w-[100%] h-[200px] object-cover"
+              src="./assets/Tile 1.avif"
+              alt="Tile Image"
+            />
+          </div>
+          <div id="category2">
+            <img
+              class="w-[100%] h-[200px] object-cover"
+              src="./assets/Tile 2.jpg"
+              alt="Tile Image"
+            />
+          </div>
+          <div
+            class="h-[200px] w-[100%] flex flex-col justify-end"
+            id="category3"
+          >
+            <a class="underline underline-offset-2" href="#"
+              >SEE ALL CATEGORIES
+              <span class="ml-2"><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </div>
+          <div id="category4">
+            <img
+              class="w-[100%] h-[200px] object-cover"
+              src="./assets/Tile 3.jpg"
+              alt="Tile Image"
+            />
+          </div>
+        </div>
+      </main>
+
+      <div id="services">
+        <h1 class="font-extrabold text-2xl text-center pt-10 pb-7">
+          OUR SERVICES
+        </h1>
+
+        <div class="border-t-2 border-b-2 border-white" id="services-container">
+          <div id="services-content">
+            <div
+              class="flex flex-col gap-3 p-4 border-b-2 border-white"
+              id="left-content"
+            >
+              <h2 class="text-xs">DURATION: 2 WEEKS</h2>
+              <p class="text-xs">WADADMIN</p>
+            </div>
+
+            <div
+              class="flex flex-col p-4 border-b-2 border-white"
+              id="right-content"
+            >
+              <h2 class="text-lg">DESIGN SERVICES</h2>
+              <p class="text-xs">
+                Our professional design experts can help you with your project
+                for free.
+              </p>
+            </div>
+
+            <div class="p-4" id="action-arrow">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+
+          <div id="services-content2">
+            <div
+              class="flex flex-col gap-3 p-4 border-b-2 border-t-2 border-white"
+              id="left-content2"
+            >
+              <h2 class="text-xs">DURATION: 1 YEAR</h2>
+              <p class="text-xs">WADADMIN</p>
+            </div>
+
+            <div
+              class="flex flex-col p-4 border-b-2 border-white"
+              id="right-content2"
+            >
+              <h2 class="text-lg">CREDIT SERVICES</h2>
+              <p class="text-xs">
+                No matter how big or small, we have a financing plan that's
+                right for you.
+              </p>
+            </div>
+
+            <div class="p-4" id="action-arrow">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+
+          <div id="services-content3">
+            <div
+              class="flex flex-col gap-3 p-4 border-b-2 border-t-2 border-white"
+              id="left-content3"
+            >
+              <h2 class="text-xs">DURATION: 4 WEEKS</h2>
+              <p class="text-xs">WADADMIN</p>
+            </div>
+
+            <div
+              class="flex flex-col p-4 border-b-2 border-white"
+              id="right-content3"
+            >
+              <h2 class="text-lg">PRO SERVICES</h2>
+              <p class="text-xs">
+                Our dedicated PRO services team is here to help save you time
+                and money.
+              </p>
+            </div>
+
+            <div class="p-4" id="action-arrow">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about">
+        <div id="about-container">
+          <div class="p-4" id="about-left">
+            <h1 class="font-extrabold text-2xl text-center pt-10 pb-7">
+              ABOUT US
+            </h1>
+            <p class="text-xs border-l-2 border-r-2 border-white p-2">
+              We are a company with over 15 years of experience in the building
+              materials market. Our mission is to provide high-quality products
+              and services to our customers.
+            </p>
+            <p class="text-xs border-l-2 border-r-2 border-white p-2">
+              We offer a wide range of tiles, including ceramic, porcelain,
+              glass, and natural stone, as well as design and installation
+              services.
+            </p>
+          </div>
+
+          <div class="p-4" id="about-right">
+            <img
+              class="rounded-t-2xl w-[100%] h-[200px] object-cover"
+              src="./assets/Tile 4.webp"
+              alt="Tile Image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+        <div id="contact-container">
+          <div class="p-4" id="contact-left">
+            <h1 class="font-extrabold text-2xl text-center pt-10 pb-7">
+              CONTACT US
+            </h1>
+            <p class="text-xs border-l-2 border-r-2 border-white p-2">
+              If you have any questions or need assistance, please feel free to
+              contact us.
+            </p>
+            <p class="text-xs border-l-2 border-r-2 border-white p-2">
+              <strong>Address:</strong> 123 Hilldrive Estate, NewsBury, NJ, USA.
+            </p>
+            <p class="text-xs border-l-2 border-r-2 border-white p-2">
+              <strong>Email:</strong> ceramictile@gmail.com
+            </p>
+            <p class="text-xs border-l-2 border-r-2 border-white p-2">
+              <strong>Phone:</strong> +1 (123) 456-7890
+            </p>
+          </div>
+
+          <div class="p-4" id="contact-right">
+            <img
+              class="rounded-t-2xl w-[100%] h-[200px] object-cover"
+              src="./assets/Tile 1.avif"
+              alt="Tile Image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <footer
+        class="p-4 border-t-2 border-b-2 border-white text-xs text-center"
+      >
+        <p>Copyright &COPY; Ceramic, 2025. All Rights Reserved.</p>
+      </footer>
     </div>
   </body>
 </html>

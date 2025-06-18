@@ -1,1 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.fa-close,
+.fa-bars {
+  font-size: 1.4rem;
+}
+
+.fa-arrow-right {
+  font-size: 2rem;
+  rotate: 50deg;
+}
+
+.underline span i {
+  font-size: 1rem;
+}
+
+.fa-chevron-right {
+  font-size: 2.8rem;
+}
