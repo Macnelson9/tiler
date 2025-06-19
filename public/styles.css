@@ -697,6 +697,10 @@ img {
   transition: text-decoration 0.5s ease-in-out, scale 0.5s ease-in-out;
 }
 #mobile-navigation {
+  background: hsla(0, 0, 97%, 1);
+  backdrop-filter: blur(16px);
+  --webkit-backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   transition: all 0.5s ease-in-out;
 }
 #shop-now-btn, #mobile-shop-now-btn {
