@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tiler | Home of Tiles</title>
+    <title>TeeTiles | Home of Tiles</title>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/e8c22a66c1.js"
@@ -11,22 +11,23 @@
     ></script>
     <script defer src="./script.js"></script>
   </head>
-  <body class="bg-gray-950">
+  <body class="bg-gray-950 scroll-smooth">
     <div class="flex flex-col text-white" id="body-container">
       <header class="p-4 border-b-2 border-white lg:px-8 xl:px-12">
         <nav class="flex items-center justify-between w-full" id="main-nav">
-          <h1 class="font-bold md:hidden">CERAMIC</h1>
+          <h1 class="font-bold md:hidden">TEETILES</h1>
           <ul
             class="hidden md:flex items-center gap-4 uppercase text-[10px] lg:text-[12px]"
           >
-            <li>Home</li>
-            <li>Catalog</li>
-            <li>Services</li>
-            <li>About</li>
+            <li id="nav-link"><a href="#hero-container">Home</a></li>
+            <li id="nav-link"><a href="#catalogue">Catalog</a></li>
+            <li id="nav-link"><a href="#services">Services</a></li>
+            <li id="nav-link"><a href="#about">About</a></li>
           </ul>
           <button
             class="hidden md:block uppercase bg-white p-2 px-3 text-black font-bold rounded-[10px]"
             type="button"
+            id="shop-now-btn"
           >
             Shop Now
           </button>
@@ -39,20 +40,21 @@
         id="mobile-navigation"
       >
         <div class="flex items-center justify-between w-full" id="mobile-top">
-          <h1 class="font-bold">CERAMIC</h1>
+          <h1 class="font-bold">TEETILES</h1>
           <i class="fa-solid fa-close"></i>
         </div>
 
         <div class="flex flex-col items-center gap-4" id="mobile-body">
           <ul class="flex flex-col items-start gap-4">
-            <li>Home</li>
-            <li>Catalog</li>
-            <li>Services</li>
-            <li>About</li>
+            <li id="nav-link"><a href="#hero-container">Home</a></li>
+            <li id="nav-link"><a href="#catalogue">Catalog</a></li>
+            <li id="nav-link"><a href="#services">Services</a></li>
+            <li id="nav-link"><a href="#about">About</a></li>
           </ul>
           <button
             class="ml-3 bg-white p-2 px-3 text-black rounded-[10px]"
             type="button"
+            id="mobile-shop-now-btn"
           >
             Shop Now
           </button>
@@ -68,10 +70,10 @@
             <h1
               class="font-extrabold text-3xl md:text-5xl lg:text-5xl xl:text-7xl"
             >
-              CERAMIC TILE
+              TEETILES
             </h1>
 
-            <i class="fa-solid fa-arrow-right"></i>
+            <i id="arrowBreathe" class="fa-solid fa-arrow-right"></i>
           </div>
 
           <div
@@ -450,7 +452,7 @@
             <p
               class="text-xs border-l-2 border-r-2 border-white p-2 md:border-none"
             >
-              <strong>Email:</strong> ceramictile@gmail.com
+              <strong>Email:</strong> teetiles@gmail.com
             </p>
             <p
               class="text-xs border-l-2 border-r-2 border-white p-2 md:border-none"
@@ -473,7 +475,7 @@
         class="px-4 py-6 border-t-2 border-b-2 border-white text-xs text-center"
       >
         <p class="font-bold">
-          Copyright &COPY; Ceramic, 2025. All Rights Reserved.
+          Copyright &COPY; TeeTiles, 2025. All Rights Reserved.
         </p>
       </footer>
     </div>

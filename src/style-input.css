@@ -33,6 +33,47 @@ img {
   font-size: 2.8rem;
 }
 
+#nav-link {
+  transition: text-decoration 0.5s ease-in-out, scale 0.5s ease-in-out;
+}
+
+#mobile-navigation {
+  transition: all 0.5s ease-in-out;
+}
+
+#shop-now-btn,
+#mobile-shop-now-btn {
+  transition: scale 0.5s ease-in-out, background-color 0.5s ease-in-out,
+    color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+#arrowBreathe {
+  animation: breathe 2s ease-in-out infinite alternate;
+}
+
+#nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  scale: 1.3;
+}
+
+#shop-now-btn:hover,
+#mobile-shop-now-btn:hover {
+  scale: 1.3;
+  background-color: #030712;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+@keyframes breathe {
+  from {
+    scale: 0.5;
+  }
+  to {
+    scale: 1.3;
+  }
+}
+
 @media (min-width: 768px) {
   .fa-arrow-right {
     font-size: 3rem;
