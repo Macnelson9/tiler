@@ -43,9 +43,6 @@ img {
 }
 
 #mobile-navigation {
-  background: hsla(0, 0, 97%, 1);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
   transition: all 0.5s ease-in-out;
 }
 
