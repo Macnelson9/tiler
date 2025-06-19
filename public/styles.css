@@ -1,5 +1,6 @@
 /*! tailwindcss v4.1.10 | MIT License | https://tailwindcss.com */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -671,7 +672,10 @@
   }
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Exo 2', sans-serif;
+}
+body {
+  font-family: 'Inter', sans-serif;
 }
 img {
   max-width: 100%;
